@@ -11,6 +11,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      # This step installs Deno
+      - name: Setup deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v1.10.x
       - uses: actions/checkout@v4
       - uses: githubocto/flat@v3
         with:
