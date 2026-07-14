@@ -1,3 +1,11 @@
+# Disclaimer (this the human written part)
+
+This is my learning app to get more acquainted with Code Claude, which I wasn't
+as much acquainted as I want with (I was acquainted with other Coding agents
+like Copilot however). Almost everything else, is read/written using Claude
+Code. I plan to figure out at some point whether I also want to keep the
+prompts around.
+
 # ki3 — electric-mobility subsidy tracker
 
 Twice per day, a GitHub Actions workflow fetches the subsidy availability table
