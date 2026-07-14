@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "test": "deno test -A tests/",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "scrape-local": "deno run -A src/postprocess.ts tests/fixtures/page.html"
+  },
+  "fmt": {
+    "include": ["src/", "tests/"]
+  },
+  "lint": {
+    "include": ["src/", "tests/"]
+  }
+}

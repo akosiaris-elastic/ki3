@@ -1,0 +1,19 @@
+name: Flat Data
+
+on:
+  schedule:
+    - cron: "0 6,18 * * *"
+  workflow_dispatch:
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://kinoumeilektrika3.gov.gr/ilektrokinisi3/
+          downloaded_filename: data/raw.html
+          postprocess: src/postprocess.ts
